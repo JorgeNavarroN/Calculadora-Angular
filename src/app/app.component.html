@@ -1,0 +1,100 @@
+<h1 class="container mx-auto" style="width: 200px;"> {{title}} </h1>
+<div class="container mx-auto" style="width: 500px;">
+
+  <div class="container-fluid border border-1 rounded">
+
+    <!-- Espacio donde se escriben los numeros -->
+
+    <div class="form-floating my-3">
+      <input class="form-control input-lg" [(ngModel)]="inputPlaceNumber" id="floatingTextarea">
+      <label for="floatingTextarea"> {{labelPlaceNumber[0] + " " + labelPlaceNumber[1] + " " + labelPlaceNumber[2]}}</label>
+    </div>
+
+    <!--  -->
+
+    <hr class="border border-dark border-1 opacity-50">
+
+    <!-- Numeros y Operadores -->
+    <div class="row">
+      <div class="col d-grid">
+        <button type="button" class="btn btn-dark" (click)="retornarNumero(siete)"> {{siete}} </button>
+      </div>
+      <div class="col d-grid">
+        <button type="button" class="btn btn-dark" (click)="retornarNumero(ocho)"> {{ocho}} </button>
+      </div>
+      <div class="col d-grid">
+        <button type="button" class="btn btn-dark" (click)="retornarNumero(nueve)"> {{nueve}} </button>
+      </div>
+      <div class="col d-grid">
+        <button type="button" class="btn btn-secondary" (click)="dividir()"> / </button>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col d-grid">
+        <button type="button" class="btn btn-dark" (click)="retornarNumero(cuatro)"> {{cuatro}} </button>
+      </div>
+      <div class="col d-grid">
+        <button type="button" class="btn btn-dark" (click)="retornarNumero(cinco)"> {{cinco}} </button>
+      </div>
+      <div class="col d-grid">
+        <button type="button" class="btn btn-dark" (click)="retornarNumero(seis)"> {{seis}} </button>
+      </div>
+      <div class="col d-grid">
+        <button type="button" class="btn btn-secondary" (click)="multiplicar()"> x </button>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col d-grid">
+        <button type="button" class="btn btn-dark" (click)="retornarNumero(uno)"> {{uno}} </button>
+      </div>
+      <div class="col d-grid">
+        <button type="button" class="btn btn-dark" (click)="retornarNumero(dos)"> {{dos}} </button>
+      </div>
+      <div class="col d-grid">
+        <button type="button" class="btn btn-dark" (click)="retornarNumero(tres)"> {{tres}} </button>
+      </div>
+      <div class="col d-grid">
+        <button type="button" class="btn btn-secondary" (click)="restar()"> - </button>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col d-grid">
+        <button type="button" class="btn btn-dark" (click)="retornarPunto(punto)"> {{punto}} </button>
+      </div>
+      <div class="col d-grid">
+        <button type="button" class="btn btn-dark" (click)="retornarNumero(cero)"> {{cero}} </button>
+      </div>
+      <div class="col d-grid">
+        <button type="button" class="btn btn-danger" (click)="delete()"> DEL </button>
+      </div>
+      <div class="col d-grid">
+        <button type="button" class="btn btn-primary" (click)="sumar()"> + </button>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col d-grid">
+        <button type="button" class="btn btn-danger" (click)="allClean()"> AC </button>
+      </div>
+      <div class="col d-grid">
+        <button type="button" class="btn btn-success" (click)="iqualOparation()"> = </button>
+      </div>
+    </div>
+
+    <br>
+
+  </div>
+
+
+</div>
